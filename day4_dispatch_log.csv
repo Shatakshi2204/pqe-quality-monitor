@@ -1,0 +1,7 @@
+alert_id,kpi,severity,value,recipients,sent_at,success
+150,bond_pull_strength_gf,CRITICAL,99.44,"['pqe_engineer@apple.com', 'line_supervisor@apple.com']",2026-03-09T20:35:50.387612,True
+149,bond_pull_strength_gf,CRITICAL,99.43,"['pqe_engineer@apple.com', 'line_supervisor@apple.com']",2026-03-09T20:35:50.697794,True
+147,reflow_peak_temp_C,CRITICAL,257.46,"['pqe_engineer@apple.com', 'line_supervisor@apple.com']",2026-03-09T20:35:51.002594,True
+152,bond_pull_strength_gf,WARNING,96.71,['pqe_engineer@apple.com'],2026-03-09T20:35:51.317632,True
+151,bond_pull_strength_gf,WARNING,95.3,['pqe_engineer@apple.com'],2026-03-09T20:35:51.637175,True
+148,bond_pull_strength_gf,WARNING,95.17,['pqe_engineer@apple.com'],2026-03-09T20:35:51.943049,True
