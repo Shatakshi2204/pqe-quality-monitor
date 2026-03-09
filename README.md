@@ -7,18 +7,18 @@ A complete, end-to-end **Quality Monitoring Alert System** built to mirror Apple
 
 This project directly addresses the Apple PQE internship requirement:
 > *"Use data to develop the quality monitoring system and implement the data-driven alert system."*
+
 ---
 
 ## 🎯 What This System Does
 
 Monitors 3 critical KPIs on a Surface Mount Technology (SMT) production line in real-time:
 
-|        KPI          |  Target  |      Spec Limits   |  Detection Tool  |
-|---------------------|----------|--------------------|------------------|
-| Solder Paste Volume |  1000 μm³| LSL 850 / USL 1150 |    SPI Machine   |
-| Reflow Peak 
-  Temperature         |  245°C   | LSL 235 / USL 255  |   Oven Profiler  |
-| Bond Pull Strength  |  80 gf   | LSL 50 / USL 110   | Bond Pull Tester |
+| KPI | Target | Spec Limits | Detection Tool |
+|-----|--------|-------------|----------------|
+| Solder Paste Volume | 1000 μm³ | LSL 850 / USL 1150 | SPI Machine |
+| Reflow Peak Temperature | 245°C | LSL 235 / USL 255 | Oven Profiler |
+| Bond Pull Strength | 80 gf | LSL 50 / USL 110 | Bond Pull Tester |
 
 When anomalies are detected → system automatically classifies severity → logs to database → dispatches email alerts to engineers on call.
 
