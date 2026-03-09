@@ -8,6 +8,12 @@ A complete, end-to-end **Quality Monitoring Alert System** built to mirror Apple
 This project directly addresses the Apple PQE internship requirement:
 > *"Use data to develop the quality monitoring system and implement the data-driven alert system."*
 
+<img width="1888" height="865" alt="product quality monitor" src="https://github.com/user-attachments/assets/5e81b8ab-3df0-4aba-988a-e11cd504b9d7" />
+
+<img width="1843" height="795" alt="img2" src="https://github.com/user-attachments/assets/96ca24b1-7cc7-486d-a9dc-7f1314ff4ef3" />
+
+<img width="1826" height="687" alt="img3" src="https://github.com/user-attachments/assets/78cd79f3-6ee3-4c2f-8e5b-1fe678f02578" />
+
 ---
 
 ## 🎯 What This System Does
@@ -54,6 +60,10 @@ Adaptive detection using a sliding 20-sample window. Adjusts to slow drift while
 ### 3. Isolation Forest (ML)
 Unsupervised anomaly detection across all 3 KPIs **simultaneously**. Catches multivariate anomalies that single-KPI rules miss — e.g., borderline reflow temp + borderline solder volume at the same time = cold joint risk.
 
+<img width="1914" height="1016" alt="day1_control_charts" src="https://github.com/user-attachments/assets/3fb37f49-adf4-4576-8aa1-543edcede9bb" />
+
+<img width="1899" height="1014" alt="day2_ML_anomaly_detection" src="https://github.com/user-attachments/assets/dbdf6354-9ea3-4443-963b-10a8e1df2f07" />
+
 ---
 
 ## 🚨 Alert Escalation Matrix
@@ -64,6 +74,10 @@ Unsupervised anomaly detection across all 3 KPIs **simultaneously**. Catches mul
 | 🟡 WARNING | One detector flags, within spec | 60 minutes | PQE Engineer |
 | 👀 WATCH | Borderline Z-score | 4 hours | Logged only |
 
+<img width="820" height="1180" alt="email_alert1" src="https://github.com/user-attachments/assets/80038270-318d-4361-9339-ea8c4b567d53" />
+
+<img width="820" height="1180" alt="email_alert2" src="https://github.com/user-attachments/assets/5c99929a-e958-4694-b881-7561a80fc460" />
+
 ---
 
 ## 🗄️ Database Schema
@@ -73,6 +87,8 @@ Normalized SQLite with 4 tables:
 - **samples** — Every sensor reading (1,200 across 5 shifts)
 - **alerts** — Every violation with severity, detector, Z-score, IF score
 - **summary** — Shift-level Cpk, mean, std, alert counts
+
+<img width="1896" height="1020" alt="day3_database_analytics" src="https://github.com/user-attachments/assets/411b8cf2-c209-4f5b-884e-7775649cd897" />
 
 ---
 
